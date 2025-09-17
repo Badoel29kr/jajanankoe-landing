@@ -7,7 +7,7 @@ const services = [
   { name: "Telkomsel", logo: "/logos/telkomsel.svg" },
   { name: "IndiHome", logo: "/logos/indihome.svg" },
   { name: "BPJS Kesehatan", logo: "/logos/bpjs.svg" },
-  { name: "GoPay", logo: "/logos/gopay.svg" },
+  { name: "ShopeePay", logo: "/logos/spay.svg" },
   { name: "OVO", logo: "/logos/ovo.svg" },
   { name: "DANA", logo: "/logos/dana.svg" },
 ];
@@ -31,7 +31,7 @@ export default function SupportedServices() {
                 alt={service.name}
                 width={100}
                 height={50}
-                className="object-contain h-12"
+                className="object-contain h-12 w-auto"
               />
             </div>
           ))}

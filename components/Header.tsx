@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, UtensilsCrossed } from "lucide-react";
 import { createWhatsAppLink } from "@/lib/utils";
 import { useState } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#jajanan", label: "Jajanan" },
@@ -24,7 +25,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
       <div className="container flex h-14 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <UtensilsCrossed className="h-6 w-6" />
+          <Image src="/logo.png" alt="Logo Jajanankoe" width={32} height={32} />
           <span className="font-bold">Jajanankoe</span>
         </Link>
         <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">

@@ -14,17 +14,25 @@ import { createWhatsAppLink } from "@/lib/utils";
 // Contoh data, ganti dengan data Anda
 const jajananItems = [
   {
-    name: "Kue Lumpur Kentang",
-    price: "Rp 3.500",
-    image: "/images/kue-lumpur.jpg",
+    name: "Tape Singkong Mentega",
+    price: "Rp 12.000",
+    image: "/images/tape-singkong mentega.jpg",
   },
-  { name: "Risoles Ragout", price: "Rp 4.000", image: "/images/risoles.jpg" },
   {
-    name: "Onde-onde Ketan Hitam",
-    price: "Rp 3.000",
-    image: "/images/onde-onde.jpg",
+    name: "Bebek Ungkep",
+    price: "Rp 110.000",
+    image: "/images/bebek pawon ayu.jpg",
   },
-  { name: "Lemper Ayam", price: "Rp 4.500", image: "/images/lemper.jpg" },
+  {
+    name: "Manggleng",
+    price: "Rp 27.000",
+    image: "/images/manggleng.jpg",
+  },
+  {
+    name: "Sale Pisang Ambon",
+    price: "Rp 42.000",
+    image: "/images/sale pisang ambon.jpg",
+  },
 ];
 
 export default function FeaturedJajanan() {
