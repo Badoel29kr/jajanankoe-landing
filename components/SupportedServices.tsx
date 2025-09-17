@@ -22,10 +22,7 @@ export default function SupportedServices() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {services.map((service) => (
-            <div
-              key={service.name}
-              className="grayscale transition hover:grayscale-0"
-            >
+            <div key={service.name}>
               <Image
                 src={service.logo}
                 alt={service.name}
