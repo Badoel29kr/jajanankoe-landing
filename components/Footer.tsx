@@ -1,8 +1,9 @@
 // components/Footer.tsx
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Instagram, Facebook, UtensilsCrossed } from "lucide-react";
-import { FaTiktok } from "react-icons/fa"; // Impor dari react-icons
+import { Instagram, Facebook } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 const socialLinks = [
   { name: "Instagram", icon: Instagram, url: "#" },
@@ -18,7 +19,12 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <UtensilsCrossed className="h-7 w-7" />
+              <Image
+                src="/logo.png"
+                alt="Logo Jajanankoe"
+                width={32}
+                height={32}
+              />
               <span className="text-xl font-bold">Jajanankoe</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">

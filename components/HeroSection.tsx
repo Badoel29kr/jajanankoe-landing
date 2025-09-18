@@ -12,22 +12,30 @@ export default function HeroSection() {
   );
 
   return (
-    <section className="w-full py-20 md:py-32 bg-gray-50">
-      <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+    <section
+      className="relative w-full py-20 md:py-32 bg-cover bg-center"
+      style={{ backgroundImage: "url('/background.png')" }}
+    >
+      {/* Ini adalah lapisan overlay gradien */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+      {/* Konten Anda, pastikan posisinya di atas overlay */}
+      <div className="relative container mx-auto text-center px-4">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg leading-tight">
           Kemudahan dalam Setiap Gigitan dan Transaksi.
         </h1>
-        <p className="mx-auto mt-6 max-w-[700px] text-lg text-muted-foreground md:text-xl">
+        <p className="mx-auto mt-6 max-w-[700px] text-lg text-white/90 md:text-xl drop-shadow">
           Nikmati jajanan tradisional favoritmu sambil menyelesaikan semua
-          pembayaran tagihan bulanan. Cepat, lezat, dan praktis dalam satu
-          platform.
+          pembayaran tagihan bulanan.
         </p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link href={linkJajanan} target="_blank" rel="noopener noreferrer">
-            <Button size="lg">Lihat Menu Jajanan</Button>
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href={linkJajanan} target="_blank">
+            <Button className="bg-primary text-white hover:bg-secondary rounded-lg px-8 py-3 text-lg font-semibold shadow-lg transform hover:scale-105 transition-transform">
+              Lihat Menu Jajanan
+            </Button>
           </Link>
-          <Link href={linkBayar} target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="secondary">
+          <Link href={linkBayar} target="_blank">
+            <Button className="bg-white text-primary hover:bg-accent px-8 py-3 rounded-lg text-lg font-semibold border-2 border-primary shadow-lg transform hover:scale-105 transition-transform">
               Mulai Bayar Tagihan
             </Button>
           </Link>
